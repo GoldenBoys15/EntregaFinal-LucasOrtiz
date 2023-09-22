@@ -1,0 +1,671 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* inicio*/
+.inicio {
+  display: flex; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 35rem;
+  max-height: 35rem; }
+
+.carousel-inner {
+  height: 32rem;
+  width: 37rem; }
+
+main {
+  background-image: url("../fotos/inicio/fondo_main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main section {
+    display: flex;
+    justify-content: center; }
+    main section div:hover {
+      transform: scale(1.1); }
+    main section .fondo_palabra {
+      transition-duration: 0.4s;
+      display: flex;
+      justify-content: center;
+      background-color: #62b8ff;
+      margin: 1rem 2rem;
+      border: solid black 2px;
+      padding: 0.2rem 0.2rem;
+      border-radius: 10px;
+      width: 35rem; }
+      main section .fondo_palabra h2 {
+        border: solid black 2px;
+        background-color: white;
+        padding: 0.4rem 0.2rem;
+        margin: 0.2rem 0.3rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        width: 40rem;
+        text-align: center; }
+  main div .tam-marcas {
+    width: 15rem;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem; }
+  main div article {
+    background-color: #62b8ff;
+    padding: 0.3rem 0.2rem;
+    margin: 1rem 2rem;
+    border: solid black 2px;
+    text-align: center;
+    border-radius: 10px;
+    width: 15rem;
+    height: 15rem; }
+    main div article .horario {
+      background-color: white;
+      border-radius: 10px;
+      border: solid black 2px;
+      padding-top: 0.3rem;
+      margin-right: 1rem;
+      margin-left: 1rem; }
+    main div article div {
+      background-color: white;
+      border-radius: 10px;
+      border: solid black 2px;
+      padding-top: 0.6rem;
+      margin-right: 1rem;
+      margin-left: 1rem; }
+
+.todo {
+  display: flex;
+  justify-content: center; }
+
+/*alimento*/
+main .fondos .fondo_palabra_2 {
+  transition-duration: 0.4s;
+  display: flex;
+  justify-content: center;
+  background-color: #62b8ff;
+  margin: 1rem 2rem;
+  border: solid black 2px;
+  padding: 0.2rem 0.2rem;
+  border-radius: 10px;
+  width: 15rem; }
+  main .fondos .fondo_palabra_2 h2 {
+    border: solid black 2px;
+    background-color: white;
+    padding: 0.4rem 0.2rem;
+    margin: 0.2rem 0.3rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    width: 40rem;
+    text-align: center; }
+
+main .grideo {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: 2fr;
+  align-items: center;
+  justify-items: center; }
+  main .grideo .palabra_grande {
+    background-color: #62b8ff;
+    border: solid black 2px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px; }
+    main .grideo .palabra_grande .tabla {
+      border: solid black 2px; }
+  main .grideo .otros {
+    margin-top: 5rem;
+    width: 30rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #62b8ff;
+    border: solid black 2px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px; }
+    main .grideo .otros .tabla {
+      border: solid black 2px; }
+  main .grideo .tabla_palabra {
+    width: 100%; }
+  main .grideo th {
+    display: inline-block;
+    width: 33.3%;
+    font-size: 1.2em; }
+  main .grideo .fuera_2 {
+    display: none; }
+  main .grideo .orden-0 {
+    order: 0; }
+    main .grideo .orden-0 .foto-perro {
+      width: 100px;
+      height: 100px; }
+  main .grideo .orden-1 {
+    order: 0; }
+    main .grideo .orden-1 .foto-pez {
+      width: 100px;
+      height: 100px; }
+  main .grideo .orden-2 {
+    order: 0; }
+    main .grideo .orden-2 .foto-hamster {
+      width: 100px;
+      height: 100px; }
+  main .grideo .orden-3 {
+    order: 0; }
+    main .grideo .orden-3 .gatos {
+      width: 100px;
+      height: 100px; }
+  main .grideo .orden-4 {
+    order: 0; }
+  main .grideo .orden-5 {
+    order: 2; }
+  main .grideo .orden-6 {
+    order: 1;
+    grid-column: span 2; }
+
+main h3 {
+  font-size: 1.4em;
+  background-color: whitesmoke;
+  border: solid black 2px; }
+
+td {
+  display: inline-block;
+  width: 100%; }
+
+.td_tabla {
+  width: 33.3%;
+  font-size: 0.8rem; }
+
+tr {
+  width: 50px;
+  border: solid black 2px; }
+
+tr:hover {
+  transform: scale(1.3);
+  transition-duration: 0.4s;
+  border: solid black 2px; }
+
+.table {
+  font-size: 0.7rem; }
+
+/*accesorios*/
+main .todo-junto {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: 2fr;
+  align-items: center;
+  justify-items: center; }
+  main .todo-junto .palabra_grande {
+    background-color: #62b8ff;
+    border: solid black 2px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px; }
+    main .todo-junto .palabra_grande .tabla {
+      border: solid black 2px; }
+  main .todo-junto .ord-1 .correa {
+    width: 100px;
+    height: 100px; }
+  main .todo-junto .ord-2 .camas {
+    width: 100px;
+    height: 100px; }
+  main .todo-junto .ord-3 .juguetes {
+    width: 100px;
+    height: 100px; }
+  main .todo-junto .ord-4 .ropas {
+    width: 100px;
+    height: 100px; }
+
+/*higiene*/
+main .grideo-higiene {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  align-items: start;
+  justify-items: center; }
+  main .grideo-higiene .precios {
+    background-color: #62b8ff;
+    border: solid black 2px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px; }
+    main .grideo-higiene .precios .tabla {
+      border: solid black 2px; }
+
+main div .precios {
+  width: 20rem;
+  height: 50rem; }
+  main div .precios section .alin {
+    text-align: start; }
+  main div .precios .taman {
+    width: auto;
+    height: auto;
+    margin-left: 2rem;
+    margin-bottom: 6rem; }
+
+main div .limpieza {
+  display: flex;
+  flex-direction: column;
+  background-color: #62b8ff;
+  border: solid black 2px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 23rem;
+  margin-bottom: auto; }
+  main div .limpieza .borde {
+    border: solid black 2px;
+    border-top: none;
+    border-bottom: none; }
+  main div .limpieza .titulo {
+    border: solid black 2px;
+    background-color: white;
+    font-size: 0.95rem;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center; }
+
+main div .preguntas {
+  background-color: #62b8ff;
+  border: solid black 2px;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 15rem;
+  height: auto;
+  margin-bottom: 5rem; }
+  main div .preguntas .titulo_2 {
+    border: solid black 2px;
+    background-color: white;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem; }
+    main div .preguntas .titulo_2 h5 {
+      font-size: 1rem;
+      border-bottom: solid black 2px;
+      padding-bottom: 0.5rem; }
+
+main div .bordaso {
+  border: solid black 2px; }
+
+/*contacto*/
+main .flexear {
+  display: flex;
+  justify-content: center; }
+  main .flexear iframe {
+    margin: 1rem; }
+  main .flexear .fondo {
+    background-color: #62b8ff;
+    border: solid black 2px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px; }
+    main .flexear .fondo .form {
+      width: 340px;
+      height: 440px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px 30px;
+      max-width: calc(100vw - 40px);
+      box-sizing: border-box;
+      font-family: 'Montserrat',sans-serif; }
+      main .flexear .fondo .form .palabra {
+        margin: 10px 0;
+        padding-bottom: 10px;
+        width: 180px;
+        border-bottom: solid black 2px; }
+
+input, .batn {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Montserrat',sans-serif;
+  transition: all .3s;
+  border-bottom: solid black 2px; }
+
+/*pagina 5 fin*/
+header {
+  background-image: url("../fotos/header/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  border-bottom: solid black 2px;
+  justify-content: center; }
+  header .abrir-menu {
+    display: none; }
+  header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    header div h1 {
+      border: solid black 2px;
+      background-color: white;
+      padding: 0.2rem 0.3rem;
+      border-radius: 10px; }
+    header div .nav {
+      margin-top: 2rem; }
+      header div .nav .menu-cerrar {
+        display: none; }
+      header div .nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center; }
+        header div .nav ul li a {
+          text-decoration: none; }
+
+.logo {
+  margin: 1rem 5rem 1rem 1rem; }
+
+a:visited {
+  color: black; }
+
+a:link {
+  color: black; }
+
+.nav-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  padding: 0.2rem 0.3rem;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border: solid black 2px; }
+
+.nav-button:hover {
+  transform: scale(1.3); }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body footer {
+    background-image: url("../fotos/header/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: auto;
+    border-top: solid black 2px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: space-between; }
+    body footer p {
+      background-color: white;
+      border: solid black;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem; }
+    body footer div {
+      background-color: white;
+      border: solid black;
+      display: flex;
+      align-items: center;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-right: 1rem; }
+      body footer div h4 {
+        margin: 0.2rem;
+        font-size: 1rem; }
+      body footer div img {
+        width: 1rem;
+        height: 1rem; }
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  /*header*/
+  header .logo {
+    margin: 1rem; }
+  /*inicio*/
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 30rem; }
+  .carousel-inner {
+    width: 20rem;
+    height: 26rem; }
+  main .todo div article {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  main .todo div img {
+    display: none; }
+  /*alimento*/
+  main .grideo {
+    grid-template-columns: repeat(2, 8fr); }
+    main .grideo .orden-0 {
+      order: -4; }
+    main .grideo .orden-3 {
+      order: -3; }
+    main .grideo .orden-4 {
+      order: -2; }
+    main .grideo .orden-5 {
+      order: -1; }
+  /*accesorios*/
+  main .todo-junto {
+    grid-template-columns: repeat(2, 8fr); }
+    main .todo-junto .ord-1 {
+      order: -4; }
+    main .todo-junto .ord-2 {
+      order: -3; }
+    main .todo-junto .ord-5 {
+      order: -2; }
+    main .todo-junto .ord-6 {
+      order: -1; }
+  /*higiene*/
+  main .grideo-higiene {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr; }
+    main .grideo-higiene .limpieza {
+      width: 20rem; }
+    main .grideo-higiene .preguntas {
+      grid-column: span 2;
+      justify-self: center;
+      width: 40rem;
+      margin-bottom: 1rem; } }
+
+@media (max-width: 600px) {
+  /*header*/
+  header {
+    justify-content: center;
+    align-items: center; }
+    header .logo {
+      margin-right: 1rem;
+      width: 60%;
+      height: 60%; }
+    header .abrir-menu {
+      display: block; }
+    header div {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      header div h1 {
+        margin-right: 1rem;
+        font-size: 0.7rem;
+        width: 10rem;
+        height: 50%;
+        text-align: center; }
+      header div .nav {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #363636;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); }
+        header div .nav .menu-cerrar {
+          display: block;
+          margin-top: 0.5rem;
+          margin-left: 0.5rem;
+          width: 3.5rem;
+          height: 2.5rem; }
+        header div .nav ul {
+          flex-direction: column;
+          align-items: end;
+          padding-left: 0rem; }
+          header div .nav ul .nav-button {
+            width: 7rem;
+            margin-top: 1rem; }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible; }
+  .btn-light {
+    border: solid black 2px;
+    margin: 0.5rem; }
+  .btn-light:hover {
+    transform: scale(1.1); }
+  .nav-button:hover {
+    transform: scale(1.1); }
+  /*footer*/
+  footer p {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.7rem; }
+  footer div .numeros {
+    font-size: 0.7rem;
+    margin: 0.4rem; }
+  /*inicio*/
+  main section .fondo_palabra h2 {
+    width: auto;
+    height: auto;
+    font-size: 0.8rem; }
+  main .todo {
+    align-items: center;
+    flex-direction: column; }
+    main .todo .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      max-height: 100rem;
+      z-index: 1; }
+    main .todo .carousel-inner {
+      width: 20rem;
+      height: 15rem; }
+    main .todo .articulo {
+      width: auto;
+      height: auto;
+      font-size: 0.8rem; }
+    main .todo .tam-marcas {
+      margin-left: 0rem; }
+  /*alimento*/
+  main {
+    box-sizing: border-box; }
+    main .fondos {
+      width: auto;
+      height: auto; }
+      main .fondos div h2 {
+        width: 60%;
+        height: auto;
+        font-size: 1rem; }
+    main .grideo {
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr; }
+      main .grideo .tabla-1 {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 75%;
+        height: 95%;
+        justify-self: center; }
+      main .grideo .tabla-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; }
+      main .grideo .fuera_2 {
+        display: grid; }
+      main .grideo .fuera {
+        display: none; }
+      main .grideo .orden-0 {
+        order: -7; }
+        main .grideo .orden-0 .foto-perro {
+          width: 200px;
+          height: 200px; }
+      main .grideo .orden-1 {
+        display: none; }
+      main .grideo .orden-2 .foto-hamster {
+        width: 200px;
+        height: 200px; }
+      main .grideo .orden-3 {
+        order: -5; }
+        main .grideo .orden-3 .gatos {
+          width: 200px;
+          height: 200px; }
+      main .grideo .orden-4 {
+        order: -6; }
+      main .grideo .orden-5 {
+        order: -4; }
+  /*accesorios*/
+  main .todo-junto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    main .todo-junto .ord-1 {
+      order: -8; }
+      main .todo-junto .ord-1 .correa {
+        width: 150px;
+        height: 150px; }
+    main .todo-junto .ord-2 {
+      order: -6; }
+      main .todo-junto .ord-2 .camas {
+        width: 200px;
+        height: 200px; }
+    main .todo-junto .ord-3 {
+      order: -4; }
+      main .todo-junto .ord-3 .juguetes {
+        width: 200px;
+        height: 200px; }
+    main .todo-junto .ord-4 .ropas {
+      width: 200px;
+      height: 200px; }
+    main .todo-junto .ord-5 {
+      order: -7; }
+    main .todo-junto .ord-6 {
+      order: -5; }
+    main .todo-junto .ord-7 {
+      order: -3; }
+  /*higiene*/
+  main .grideo-higiene {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    height: 2500px; }
+    main .grideo-higiene .precios {
+      width: 15rem;
+      height: 45rem; }
+      main .grideo-higiene .precios .taman {
+        width: 15rem;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 0; }
+    main .grideo-higiene .limpieza {
+      width: 16rem; }
+  /*contacto*/
+  main .flexear {
+    flex-direction: column; }
+    main .flexear iframe {
+      width: auto;
+      height: auto;
+      margin: 0;
+      margin-bottom: 1rem; } }

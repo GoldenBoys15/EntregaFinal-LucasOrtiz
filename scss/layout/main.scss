@@ -1,0 +1,354 @@
+/* inicio*/
+.inicio{
+    display: flex;
+}
+.carousel-inner img {
+    @include tam_anch(100%,35rem);
+    max-height: 35rem;
+}
+.carousel-inner{
+    height: 32rem;
+    width: 37rem;
+}
+
+main{
+    background-image:url("../fotos/inicio/fondo_main.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    section{
+        display: flex;
+        justify-content: center;
+            div:hover {
+                transform: scale(1.1);
+            }
+            .fondo_palabra{
+                transition-duration: 0.4s;
+                display: flex;
+                justify-content: center;
+                background-color: $color-fondo;
+                margin: 1rem 2rem;
+                border:  $borde;
+                padding: 0.2rem 0.2rem;
+                border-radius: 10px;
+                width: 35rem;
+                h2{
+                    @include fondo_frase();
+            }
+        }
+    }
+    div{
+        .tam-marcas{
+            @include tam_anch(15rem, 15rem);
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        article{
+            .horario{
+                background-color: white;
+                border-radius: 10px;
+                border: $borde;
+                padding-top: 0.3rem;
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            background-color: $color-fondo;
+            padding: 0.3rem 0.2rem;
+            margin: 1rem 2rem;
+            border: $borde;
+            text-align: center;
+            border-radius: 10px;
+            @include tam_anch(15rem, 15rem);
+            div{
+                background-color: white;
+                border-radius: 10px;
+                border:  $borde;
+                padding-top: 0.6rem;
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+.todo{
+    display: flex;
+    justify-content: center;
+}
+
+/*alimento*/
+
+main{
+    .fondos{
+        .fondo_palabra_2{
+            @include fondo_fondo(15rem);
+                h2{
+                    @include fondo_frase();
+            }
+        }
+    }
+    .grideo{
+        display: grid;
+        grid-template-columns:repeat(4, 2fr);
+        grid-template-rows: 2fr;
+        align-items: center;
+        justify-items: center;
+        .palabra_grande{
+            @include fondo_tabla;
+        }
+        .otros{
+            margin-top: 5rem;
+            @include tam_anch(30rem, 15rem);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @include fondo_tabla;
+        }
+        .tabla_palabra{
+            width: 100%;
+        }
+        th{
+            display: inline-block;
+            width: 33.3%;
+            font-size: 1.2em;
+        }
+        .fuera_2{
+            display: none;
+        }
+        .orden-0{
+            order: 0;
+            .foto-perro{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .orden-1{
+            order: 0;
+            .foto-pez{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .orden-2{
+            order: 0;
+            .foto-hamster{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .orden-3{
+            order: 0;
+            .gatos{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .orden-4{
+            order: 0;
+        }
+        .orden-5{
+            order:2;
+        }
+        .orden-6{
+            order: 1;
+            grid-column: span 2;
+        }
+        
+    }
+    h3{
+        font-size: 1.4em;
+        background-color: whitesmoke;
+        border: $borde;
+    }
+}
+
+td{
+    display: inline-block;
+    width: 100%;
+}
+.td_tabla{
+    width: 33.3%;
+    font-size: 0.8rem;
+}
+tr{
+    width: 50px;
+    border: $borde;
+}
+
+tr:hover{
+    transform: scale(1.3);
+    transition-duration: 0.4s;
+    border: $borde;
+}
+.table{
+    font-size: 0.7rem;
+}
+
+
+
+/*accesorios*/
+main{
+    .todo-junto{
+        display: grid;
+        grid-template-columns:repeat(4, 2fr);
+        grid-template-rows: 2fr;
+        align-items: center;
+        justify-items: center;
+        .palabra_grande{
+            @include fondo_tabla;
+        }
+        .ord-1{
+            .correa{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .ord-2{
+            .camas{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .ord-3{
+            .juguetes{
+                @include tam_anch(100px, 100px);
+            }
+        }
+        .ord-4{
+            .ropas{
+                @include tam_anch(100px, 100px);
+            }
+        }
+    }
+    
+}
+
+
+/*higiene*/
+
+main{
+    .grideo-higiene{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 2fr;
+        align-items: start;
+        justify-items: center;
+        .precios{
+            @include fondo_tabla;
+        }
+    }
+    div{
+        
+        .precios{
+            @include tam_anch(20rem, 50rem);
+            section{
+                .alin{
+                    text-align: start;
+                }
+            }
+            .taman{
+                @include tam_anch(auto, auto);
+                margin-left: 2rem;
+                margin-bottom: 6rem;
+            }
+        }
+        .limpieza{
+            display: flex;
+            flex-direction: column;
+            background-color: $color-fondo;
+            border:  $borde;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 15px;
+            width: 23rem;
+            
+            margin-bottom: auto;
+            .borde{
+                border:  $borde;
+                border-top: none;
+                border-bottom: none;
+            }
+
+            .titulo{
+                border:  $borde;
+                background-color: white;
+                font-size: 0.95rem;
+                border-radius: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                text-align: center;
+            }
+        }
+        .preguntas{
+            background-color: $color-fondo;
+            border:  $borde;
+            margin: 1rem 1rem;
+            padding: 1rem ;
+            border-radius: 15px;
+            @include tam_anch(15rem, auto);
+            margin-bottom: 5rem;
+            .titulo_2{
+                border:  $borde;
+                background-color: white;
+                font-size: 0.9rem;
+                border-radius: 1rem;
+                padding: 1rem 1rem;
+                text-align: center;
+                margin-bottom: 0.5rem;
+                margin-top: 0.5rem;
+
+                h5{
+                    font-size: 1rem;
+                    border-bottom:  $borde;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+        .bordaso{
+            border:  $borde;
+        }
+    }
+}
+
+/*contacto*/
+
+main{
+    .flexear{
+        display: flex;
+        justify-content: center;
+        iframe{
+            margin: 1rem;
+        }
+        .fondo{
+            background-color: $color-fondo;
+            border:  $borde;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 15px;
+            .form{
+                @include tam_anch(340px, 440px);
+                background:white;
+                border-radius:8px;
+                padding:20px 30px;
+                max-width:calc(100vw - 40px);
+                box-sizing:border-box;
+                font-family:'Montserrat',sans-serif;
+                .palabra{
+                        margin:10px 0;
+                        padding-bottom:10px;
+                        width:180px;
+                        border-bottom:$borde;
+                    }
+                
+                }      
+            }
+            
+        }
+    }
+
+input, .batn{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom: $borde;
+}
+
+/*pagina 5 fin*/

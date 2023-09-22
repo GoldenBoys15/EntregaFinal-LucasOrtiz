@@ -1,0 +1,87 @@
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    
+    /*header*/
+    header{
+        .logo{
+            margin: 1rem;
+        }
+    }
+    /*inicio*/
+    .carousel-inner img {
+        @include tam_anch(100%, 100%);
+        max-height: 30rem;
+    }
+    .carousel-inner{
+        @include tam_anch(20rem, 26rem);
+    }
+    main{
+        .todo{
+            
+            div{
+                article{
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+    /*alimento*/
+    main{
+        .grideo{
+            grid-template-columns:repeat(2, 8fr);
+            .orden-0{
+                order: -4;
+            }
+            .orden-3{
+                order: -3;
+            }
+            .orden-4{
+                order: -2;
+            }
+            .orden-5{
+                order: -1;
+            }
+        }
+    }
+    /*accesorios*/
+    main{
+        .todo-junto{
+            grid-template-columns:repeat(2, 8fr);
+            .ord-1{
+                order: -4;
+            }
+            .ord-2{
+                order: -3;
+            }
+            .ord-5{
+                order: -2;
+            }
+            .ord-6{
+                order: -1;
+            }
+        }
+    }
+
+    /*higiene*/
+    main{
+        .grideo-higiene{
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows: 2fr;
+            .limpieza{
+                width: 20rem;
+
+            }
+            .preguntas{
+                grid-column: span 2;
+                justify-self: center;
+                width: 40rem;
+                margin-bottom: 1rem;
+            }
+        }
+        
+    }
+}

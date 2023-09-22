@@ -1,0 +1,251 @@
+@media (max-width: 600px) {
+    /*header*/
+    header{
+        justify-content: center;
+        align-items: center;
+        .logo{
+            margin-right: 1rem;
+            @include tam_anch(60%, 60%);
+        }
+        .abrir-menu{
+            display: block;
+        }
+        div{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            h1{
+                margin-right: 1rem;
+                font-size: 0.7rem;
+                @include tam_anch(10rem, 50%);
+                text-align: center;
+            }
+            .nav{
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: rgb(54, 54, 54);
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                .menu-cerrar{
+                    display: block;
+                    margin-top: 0.5rem;
+                    margin-left: 0.5rem;
+                    @include tam_anch(3.5rem, 2.5rem);
+                }
+                ul{
+                    flex-direction: column;
+                    align-items: end;
+                    padding-left: 0rem;
+                    .nav-button{
+                        width: 7rem;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn-light{
+        border: $borde;
+        margin: 0.5rem;    
+    }
+    .btn-light:hover{
+        transform: scale(1.1);
+    }
+    .nav-button:hover {
+        transform: scale(1.1);
+    }
+    /*footer*/
+    footer{
+        p{
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            font-size: 0.7rem;
+        }
+        div{
+            .numeros{
+                font-size: 0.7rem;
+                margin: 0.4rem;
+            }
+        }
+    }
+
+
+    /*inicio*/
+    main{
+        section{
+            .fondo_palabra{
+                h2{
+                    @include tam_anch(auto, auto);
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .todo{
+            align-items: center;
+            flex-direction: column;      
+            .carousel-inner img {
+                @include tam_anch(100%, 100%);
+                max-height: 100rem;
+                z-index: 1;
+            }
+            .carousel-inner{
+                @include tam_anch(20rem, 15rem);
+            }
+            .articulo{
+                @include tam_anch(auto, auto);
+                font-size: 0.8rem;
+            }
+            .tam-marcas{
+                margin-left: 0rem;
+
+            }
+        }
+    }
+
+    /*alimento*/
+    main{
+        box-sizing: border-box;
+        .fondos{
+            @include tam_anch(auto, auto);
+            div{
+                h2{
+                    @include tam_anch(60%, auto);
+                    font-size: 1rem;
+                }
+            }
+        }
+        .grideo{
+            align-items: center;
+            
+            .tabla-1{
+                margin: 0.5rem;
+                padding: 0.5rem;
+                @include tam_anch(75%, 95%);
+                justify-self: center;
+            }
+            .tabla-2{
+                display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows: 1fr ;
+            }
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            
+            .fuera_2{
+                display: grid;
+            }
+            .fuera{
+                display: none;
+            }
+            .orden-0{
+                order: -7;
+                .foto-perro{
+                    @include tam_anch(200px, 200px)
+                }
+            }
+            .orden-1{
+                display: none;
+            }
+            .orden-2{
+                .foto-hamster{
+                    @include tam_anch(200px, 200px)
+                }
+            }
+            .orden-3{
+                order: -5;
+                .gatos{
+                    @include tam_anch(200px, 200px)
+                }
+            }
+            .orden-4{
+                order: -6;
+            }
+            .orden-5{
+                order: -4;
+            }
+            
+        }
+    }
+    /*accesorios*/
+    main{
+        .todo-junto{
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            .ord-1{
+                order: -8;
+                .correa{
+                    @include tam_anch(150px, 150px)
+                }
+            }
+            .ord-2{
+                order: -6;
+                .camas{
+                    @include tam_anch(200px, 200px)
+                }
+            }
+            .ord-3{
+                order: -4;
+                .juguetes{
+                    @include tam_anch(200px, 200px);
+                }
+            }
+            .ord-4{
+                .ropas{
+                    @include tam_anch(200px, 200px);
+                }
+            }
+            .ord-5{
+                order: -7;
+            }
+            .ord-6{
+                order: -5;
+            }
+            .ord-7{
+                order: -3;
+            }
+        }
+    }
+    /*higiene*/
+    main{
+        .grideo-higiene{
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            height: 2500px;
+            .precios{
+                @include tam_anch(15rem, 45rem);
+                .taman{
+                    width: 15rem;
+                    align-items: center;
+                    margin-left: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .limpieza{
+                width: 16rem;
+            }
+        }
+    }
+    /*contacto*/
+    main{
+        .flexear{
+            flex-direction: column;
+            iframe{
+                @include tam_anch(auto, auto);
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
